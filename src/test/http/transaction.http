@@ -1,0 +1,31 @@
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000000",
+  "amount": 500
+}
+###
+
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000000",
+  "amount": 500
+}
+
+###
+POST http://localhost:8080/transaction/cancel
+Content-Type: application/json
+
+{
+  "transactionId": "96d8361cdb794f93afa7ed64d984d185",
+  "accountNumber": "1000000000",
+  "amount": 500
+}
+
+###
+GET http://localhost:8080/transaction/cf1d5718e0364afdbfe80e6d597791c9
